@@ -25,12 +25,6 @@ function SideNav() {
     },
     {
       id: 1,
-      name: "Analytics",
-      icon: LineChart,
-      path: "/dashboard/analytics",
-    },
-    {
-      id: 1,
       name: "Upgrade",
       icon: Shield,
       path: "/dashboard/upgrade",

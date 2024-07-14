@@ -13,24 +13,31 @@ function Header() {
     useEffect(()=>{
       console.log(path);
     },[])
-  return !path.includes('aiform')&&(
-    <div className="p-5 border-b shadow-sm">
-      <div className="flex items-center justify-between">
-        <Image src={"/logo.svg"} width={150} height={50} alt="logo" />
-        {isSignedIn ? (
-          <div className="flex items-center gap-5">
-            <Link href={'/dashboard'}>
+  return (
+    !path.includes("aiform") && (
+      <div className="p-5 border-b shadow-sm">
+        <div className="flex items-center justify-between">
+          <Image
+            src={"/logo.svg"}
+            width={150}
+            height={50}
+            alt="AIFormGenerator"
+          />
+          {isSignedIn ? (
+            <div className="flex items-center gap-5">
+              <Link href={"/dashboard"}>
                 <Button variant="outline">Dashboard</Button>
-            </Link>
-            <UserButton />
-          </div>
-        ) : (
-          <SignInButton>
-            <Button>Get Started</Button>
-          </SignInButton>
-        )}
+              </Link>
+              <UserButton />
+            </div>
+          ) : (
+            <SignInButton>
+              <Button>Get Started</Button>
+            </SignInButton>
+          )}
+        </div>
       </div>
-    </div>
+    )
   );
 }
 

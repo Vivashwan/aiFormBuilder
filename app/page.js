@@ -16,8 +16,8 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 sm:text-xl/relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea!
+            Transform how you create forms with our innovative AI tool, designed
+            to save you time and improve accuracy.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -26,13 +26,6 @@ export default function Home() {
               href="#"
             >
               Let's Create
-            </a>
-
-            <a
-              className="block w-full rounded px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-              href="#"
-            >
-              Learn More
             </a>
           </div>
         </div>
